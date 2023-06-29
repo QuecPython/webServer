@@ -1,0 +1,321 @@
+:root {
+    --blue: #007bff;
+    --blue-dark: #0057b4;
+    --blue-light: #67a5e9;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --red-light: #f35a68;
+    --red-dark: #D9041A;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-light:#ebedf0;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body{
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--dark);
+    text-align: left;
+    background-color: var(--light);
+    height: 100%;
+}
+a{
+  color: var(--primary);
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  display: inline-block;
+}
+a:hover, a:focus, a:active{
+  color: #20c997;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  outline: none;
+}
+.sh-app{
+  height: 100%;
+  position: relative;
+}
+.sh-icon{
+  width: 1.5rem;
+  display: block;
+  fill: currentColor;
+}
+.sh-container{
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+.sh-info{
+  position: relative;
+  line-height: 1.5;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+}
+.sh-info+.sh-info{
+  margin-left: 0.5rem;
+}
+.sh-info-content,
+.sh-info label{
+  align-self: flex-start;
+  padding: 0 0.25rem;
+}
+.sh-info label{
+  font-weight: 500;
+  flex: 0 0 auto;
+}
+.sh-info-content{
+  flex: 1 0 auto;
+  text-align: left;
+}
+.sh-app-header{
+  box-shadow: 0 0.025rem 0.1rem 0 #afafaf;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.sh-header{
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  justify-content: center;
+  width: 100%;
+}
+.sh-header{
+  height: 2rem;
+}
+.sh-header-logo{
+  flex: 0 0 auto;
+  width: 6rem;
+  padding: 0.375rem 1.125rem;
+}
+.sh-header-logo a{
+  display: inline-flex;
+}
+.sh-header-logo img{
+  width: 100%;
+}
+.sh-header-title{
+  flex: 1 1 auto;
+  align-self: center;
+  text-align: right;
+  font-weight: 600;
+  color: var(--orange);
+}
+.sh-app-body{
+  position: relative;
+  padding: 2rem 0 2rem 0;
+  height: 100%;
+}
+.sh-network{
+  height: 4rem;
+}
+.sh-network,
+.sh-bandwidth,
+.sh-device,
+.sh-device-id{
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sh-bandwidth{
+  color: var(--danger);
+  height: 2rem;
+}
+.sh-device-item{
+  flex: 0 0 auto;
+  padding: 0.5rem 0.75rem;
+}
+.sh-device-icon{
+  width: 4rem;
+  height: 4rem;
+  color: var(--gray);
+  display: inline-block;
+}
+.sh-device-icon .sh-icon{
+  width: 100%;
+}
+.sh-device-text{
+  font-size: 0.6rem;
+  color: var(--gray);
+}
+.sh-line{
+  border-top: 0.05rem solid var(--gray);
+  width: 4rem;
+  background-color: transparent;
+}
+.sh-button-group{
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  justify-content: space-between;
+  width: 20rem;
+  margin: 1.5rem auto;
+}
+.sh-button{
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0.025rem solid transparent;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.mobile-btn{
+  background-color: var(--blue);
+}
+.mobile-btn:hover{
+  background-color: var(--blue-light);
+}
+.mobile-btn:active{
+  background-color: var(--blue-dark);
+}
+.unicom-btn{
+  background-color: var(--red-dark);
+}
+.unicom-btn:hover{
+  background-color: var(--red-light);
+}
+.unicom-btn:active{
+  background-color: var(--red);
+}
+.telecom-btn{
+  background-color: var(--blue-dark);
+}
+.telecom-btn:hover{
+  background-color: var(--blue-light);
+}
+.telecom-btn:active{
+  background-color: var(--blue);
+}
+.sh-device-id{
+  color: var(--gray);
+}
+.sh-app-footer{
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2rem;
+  border-top: 0.025rem solid var(--gray);
+  background-color: var(--white);
+}
+.sh-app-footer p{
+  line-height: 1;
+  text-align: center;
+  font-size: 0.5rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
+.sh-dialog{
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  width: 10rem;
+  overflow: hidden;
+  font-size: 0.4rem;
+  box-shadow: 0 0 0.2rem 0 var(--gray);
+  background-color: var(--white);
+  border-radius: 0.4rem;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+.sh-dialog-title{
+  padding-top: 0.65rem;
+  font-weight: 500;
+  line-height: 0.6rem;
+  text-align: center;
+}
+.sh-dialog-content{
+  border-top: 0.025rem solid var(-gray-light);
+  color: var(--gray);
+  max-height: 60vh;
+  padding: 0.65rem 0.6rem;
+  overflow-y: auto;
+  font-size: 0.35rem;
+  line-height: 0.5rem;
+  white-space: pre-wrap;
+  text-align: center;
+  word-wrap: break-word;
+}
+.sh-dialog-footer{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+  border-top: 0.025rem solid var(--gray-light);
+}
+
+.sh-dialog-cancel,
+.sh-dialog-confirm{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  height: 1.2rem;
+  margin: 0;
+  border: 0;
+  font-size: 0.4rem;
+  background-color: transparent;
+  border-radius: 0;
+}
+.sh-dialog-cancel{
+  color: #323233;
+}
+.sh-dialog-confirm{
+ color: #ee0a24;
+ border-left: 0.025rem solid var(--gray-light);
+}
