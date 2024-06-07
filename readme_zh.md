@@ -1,6 +1,6 @@
 # QuecPython Web Server 解决方案
 
-中文 | [English](README.MD)
+中文 | [English](./readme.md)
 
 ## 简介
 
